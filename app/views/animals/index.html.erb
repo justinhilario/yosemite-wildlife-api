@@ -1,0 +1,9 @@
+<h1>Yosemite National Park Wildlife Tracker</h1>
+
+<ul>
+    <% @animals.each do |animal| %>
+        <li>
+            <%= link_to animal.common_name, animal_path(animal)%>
+        </li>
+    <% end %>
+</ul>
